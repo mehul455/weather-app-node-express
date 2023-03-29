@@ -20,6 +20,7 @@ body{
 .main_menu{
     background-color: var(--main-bg);
     position: fixed;
+    z-index: 10000;
   
 
 }
