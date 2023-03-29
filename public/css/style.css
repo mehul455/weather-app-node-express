@@ -1,0 +1,382 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+:root{
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.main_menu{
+    background-color: var(--main-bg);
+    position: fixed;
+  
+
+}
+.navbar{
+    color: #fff !important;
+    background-color: var(--main-bg) !important;
+padding: 2rem 0;
+/* z-index: 1000; */
+}
+.navbar li{
+    margin-left: 2rem;
+}
+.navbar a{
+    color: #fff;
+    font-size: 1.8rem;
+    z-index: 1;
+}
+.navbar a:hover{
+    color: var(--main-color);
+}
+
+
+.navbar-nav>.active>a {
+    color: white !important;
+}
+
+.main_header_left{
+
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.main_header_left p{
+    font-size: 2rem;
+}
+.main_header_left h1{
+    font-size: 4rem;
+    margin: 1rem 0 4rem 0;
+    text-transform: capitalize;
+}
+
+
+.main_header_right{
+
+    height: 55rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer {
+    width:100%;
+    height: 150px;
+    background-color: var(--main-bg);
+    /* margin-top: auto; */
+    position: relative;
+    top:15vh;
+}
+.sm a{
+    color: #fff;
+    font-size: 22px;
+    margin: 0 6px;
+    transition: .2s linear;
+    text-decoration: none;
+}
+.sm a:hover{
+    color: #48dbfb;
+    background-color: transparent;
+    box-shadow: 0 0 10px #48dbfb, 0 0 40px #48dbfb,  0 0 80px #48dbfb;
+    transition-delay: 0.5ms;
+}
+
+/* footer p{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    line-height: 5rem;
+    font-size: 1.4rem;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
+.tempInfoation{
+    width:40rem;
+    margin:auto;
+    min-height: 20rem;
+    background-color: #323544;
+    border-radius: 1rem;
+    padding:1rem;
+    font-family: sans-serif;
+}
+.top_layer{
+    width: 100%;
+    height:20%;
+    background-color: #262831;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 1rem;
+}
+.top_layer p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 2rem 0;
+
+}
+.main_layer{
+width: 100%;
+height: 80%;
+display: flex;
+flex-direction: column;
+}
+.main_layer #city_name{
+    padding: 2rem 0;
+    color: beige;
+    font-size: 2rem;
+}
+
+
+
+.main_layer .middle_layer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+.main_layer .middle_layer p,
+.main_layer .middle_layer .fa{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.fa{
+    color: aqua;
+}
+sup{
+    font-size: 1rem;
+    margin-top: -2rem;
+}
+.data_hide{
+    visibility: hidden;
+    transition: all 0.3s linear;
+}
+
+/*  */
+.temp_form{
+    width: 60%;
+    position: relative;
+    margin: 5rem auto;
+
+}
+
+.temp_form input[type="text"]{
+    width: 100%;
+    padding: 2rem 5rem 2rem 2rem;
+    background: #1e272e;
+    color: white;
+    outline: none;
+    border:none;
+    font-size: 1.7rem;
+    border-radius:3rem ;
+}
+
+::placeholder{
+    color:whitesmoke
+}
+
+.temp_form input[type="submit"]{
+    position: absolute;
+    top:15px;
+    right:10px;
+    bottom:none;
+    background-color: #0097e6;
+    padding:  0.5rem 2em 0.5rem 2rem;
+    border-radius: 3rem;
+    color:white;
+    font-size: 1.6rem;
+    align-self: center;
+}
+
+.temp_form input[type="submit"]:hover{
+    color:#0097e6;
+    background-color: aliceblue;
+}
+
+
+
+@media (max-width:991px) { 
+    .tempInfoation{
+        width:30rem;
+        margin:auto;
+        min-height: 20rem;
+        background-color: #323544;
+        border-radius: 1rem;
+        padding:1rem;
+        font-family: sans-serif;
+    }
+    .temp_form{
+        width: 90%;
+        position: relative;
+        margin: 5rem auto;
+    
+    }
+    
+    
+
+ }
+
+ @import url(https://fonts.googleapis.com/css?family=Gilda+Display);
+
+.backgroundd {
+  background: radial-gradient(#000, #111)!important;
+  color: white;
+  overflow: hidden;
+  height: 100vh;
+  user-select: none;
+}
+
+.static {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  top: -100px;
+  opacity: 0.05;
+  /* z-index: 230; */
+  user-select: none;
+  user-drag: none;
+}
+
+.error {
+  text-align: center;
+  font-family: 'Gilda Display', serif;
+  font-size: 95px;
+  font-style: italic;
+  text-align: center;
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -60px;
+  right: 0;
+  animation: noise 2s linear infinite;
+  overflow: default;
+}
+
+.error:after {
+  content: '404';
+  font-family: 'Gilda Display', serif;
+  font-size: 100px;
+  font-style: italic;
+  text-align: center;
+  width: 150px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: blue;
+  animation: noise-1 .2s linear infinite;
+}
+
+.info {
+  text-align: center;
+  font-family: 'Gilda Display', serif;
+  font-size: 15px;
+  font-style: italic;
+  text-align: center;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 140px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  animation: noise-3 1s linear infinite;
+}
+
+.error:before {
+  content: '404';
+  font-family: 'Gilda Display', serif;
+  font-size: 100px;
+  font-style: italic;
+  text-align: center;
+  width: 100px;
+  height: 60px;
+  line-height: 60px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  color: red;
+  animation: noise-2 .2s linear infinite;
+}
+
+@keyframes noise-1 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: -6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: 2px;}
+}
+
+@keyframes noise-2 {
+  0%, 20%, 40%, 60%, 70%, 90% {opacity: 0;}
+  10% {opacity: .1;}
+  50% {opacity: .5; left: 6px;}
+  80% {opacity: .3;}
+  100% {opacity: .6; left: -2px;}
+}
+
+@keyframes noise {
+  0%, 3%, 5%, 42%, 44%, 100% {opacity: 1; transform: scaleY(1);}  
+  4.3% {opacity: 1; transform: scaleY(1.7);}
+  43% {opacity: 1; transform: scaleX(1.5);}
+}
+
+@keyframes noise-3 {
+  0%,3%,5%,42%,44%,100% {opacity: 1; transform: scaleY(1);}
+  4.3% {opacity: 1; transform: scaleY(4);}
+  43% {opacity: 1; transform: scaleX(10) rotate(60deg);}
+}
+
+/* logo */
+
+.logo{
+    height: 80px;
+    width:89px;
+}
+
+.zi{
+    z-index: -1;
+}
+
