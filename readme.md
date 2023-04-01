@@ -1,6 +1,6 @@
 # Weather App
 
-This App can scrap the comments from youtube videos by their URLS
+
 
 ## How to run this app :
 
